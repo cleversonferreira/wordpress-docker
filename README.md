@@ -1,16 +1,15 @@
-##Instalando Docker
-
+### Instalando Docker
 #
 
-######Linux
+###### Linux
 
 #####Instale o Docker
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
 ##### Instale o Docker Compose
 https://www.digitalocean.com/community/tutorials/how-to-install-docker-compose-on-ubuntu-18-04
 #
-######Windows
-#####Instale Docker + Docker Compose
+###### Windows
+##### Instale Docker + Docker Compose
 https://docs.docker.com/docker-for-windows/install/#about-windows-containers
 #
 
@@ -24,7 +23,7 @@ https://docs.docker.com/docker-for-windows/install/#about-windows-containers
 
 ##### Crie um Novo Host
 #
-######Linux
+###### Linux
 Abra o arquivo de hosts
     
     sudo vim /etc/hosts
@@ -33,7 +32,7 @@ Em seguida cole o código abaixo, substituindo CONTAINER_IP_HERE pelo ip do cont
 
 	CONTAINER_IP_HERE	estrategia-site.docker
 #
-######Windows
+###### Windows
 - Abra o arquivo: C:\Windows\System32\Drivers\etc\hosts
 
 - Em seguida cole o código abaixo, substituindo CONTAINER_IP_HERE pelo ip do container
