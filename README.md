@@ -19,7 +19,7 @@ https://docs.docker.com/docker-for-windows/install/#about-windows-containers
 
 ##### Pegar o ip do Container
 
-    docker inspect estrategia-site | grep '"IPAddress"'
+    docker inspect CONTAINER_NAME | grep '"IPAddress"'
 
 ##### Crie um Novo Host
 #
@@ -30,14 +30,14 @@ Abra o arquivo de hosts
 
 Em seguida cole o código abaixo, substituindo CONTAINER_IP_HERE pelo ip do container
 
-	CONTAINER_IP_HERE	estrategia-site.docker
+	CONTAINER_IP_HERE	wordpress-docker.docker
 #
 ###### Windows
 - Abra o arquivo: C:\Windows\System32\Drivers\etc\hosts
 
 - Em seguida cole o código abaixo, substituindo CONTAINER_IP_HERE pelo ip do container
 
-	    CONTAINER_IP_HERE	wordpress-docker
+	    CONTAINER_IP_HERE	wordpress-docker.docker
 - Salve o arquivo
 
 #
