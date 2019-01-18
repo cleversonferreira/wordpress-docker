@@ -1,8 +1,9 @@
-version: '3'
+version: '2'
 
 services:
    db:
      image: mysql:5.7
+     container_name: docker-mysql
      volumes:
        - db_data:/var/lib/mysql
      restart: always
@@ -16,10 +17,11 @@ services:
      depends_on:
        - db
      image: wordpress:latest
+     container_name: docker-wordpress
      volumes:
        - ./themes:/var/www/html/wp-content/themes
      ports:
-       - "8888:80"
+       - "8080:80"
      restart: always
      environment:
        WORDPRESS_DB_HOST: db:3306
